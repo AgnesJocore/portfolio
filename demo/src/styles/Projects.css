@@ -1,0 +1,212 @@
+.projects-section {
+  padding: 80px 20px;
+  background-color: #2A2944;
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* --- HEADER STYLING --- */
+.projects-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.projects-title {
+  font-family: 'Blinker', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin: 0 0 30px 0;
+}
+
+/* Filter Chips */
+.filter-chips {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.chip {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #b0b0c0;
+  padding: 10px 24px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: 'Blinker', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.chip:hover {
+  border-color: #38D67A;
+  color: #fff;
+}
+
+.chip-active {
+  background: #38D67A !important;
+  color: #1e1d31 !important;
+  border-color: #38D67A !important;
+}
+
+/* --- GRID LAYOUT (3 COLUMNS) --- */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+}
+
+.project-card {
+  background: transparent;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+.card-link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* IMAGE AREA - Raised to 600px to properly house 440 x 956 images */
+.image-wrapper {
+  width: 100%;
+  height: 600px; /* High proportion for vertical UI phone screens */
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  background: #1e1d31;
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle outline edge border */
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* clips gracefully without stretching */
+  object-position: top; /* Makes sure the very top of the app is shown */
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.05);
+}
+
+/* Hover Overlay */
+.hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.45); /* Mild dark dim shade */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .hover-overlay {
+  opacity: 1;
+}
+
+.hover-overlay span {
+  background: #38D67A;
+  color: #1e1d31;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-family: 'Blinker', sans-serif;
+  font-size: 0.95rem;
+  transform: translateY(15px);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .hover-overlay span {
+  transform: translateY(0);
+}
+
+/* Card Details (Title and Category labels under the image) */
+.card-details {
+  padding: 20px 5px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-details h3 {
+  font-family: 'Blinker', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+
+.category {
+  font-family: 'Blinker', sans-serif;
+  font-size: 0.8rem;
+  color: #38D67A;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* --- VIEW ALL BUTTON --- */
+.view-all-wrapper {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.view-all-btn {
+  font-family: 'Blinker', sans-serif;
+  color: #38D67A;
+  background: transparent;
+  border: 2px solid #38D67A;
+  padding: 14px 40px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(56, 214, 122, 0.1);
+}
+
+.view-all-btn:hover {
+  background: #38D67A;
+  color: #1e1d31;
+  box-shadow: 0 6px 20px rgba(56, 214, 122, 0.3);
+  transform: translateY(-2px);
+}
+
+/* --- RESPONSIVE ADJUSTMENTS --- */
+@media (max-width: 900px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row for standard tablets */
+  }
+  .image-wrapper {
+    height: 500px;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects-grid {
+    grid-template-columns: 1fr; /* Single column on phones */
+  }
+  
+  .image-wrapper {
+    height: 480px;
+  }
+}
