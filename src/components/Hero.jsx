@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Hero.css';
-import resumeFile from '../assets/Agnes-Resume.pdf';
+import resumeFile from '../assets/Resume.pdf';
 
 const Home = () => {
   return (

@@ -7,21 +7,21 @@ const projectsData = [
     title: 'Furniture Shopping App',
     category: 'UI/UX',
     image: '/images/furniture.png', 
-    viewLink: 'https://www.figma.com/proto/fNWwaOIDgdyhULSn0Jcvxk/Furniture?node-id=0-1&p=f&t=qUN4zqTsWM6UciUL-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=65%3A61',
+    viewLink: 'https://www.figma.com/proto/fNWwaOIDgdyhULSn0Jcvxk/Furniture?node-id=65-61&p=f&t=F3tlmuJ3jJJUmUE6-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=65%3A61',
   },
   {
     id: 2,
-    title: 'Perfume Brand Identity',
+    title: 'Perfume Shopping App',
     category: 'UI/UX',
     image: '/images/Drop.png', 
-    viewLink: 'https://www.figma.com/proto/zIQE6pnA7CkoLPjf9KPJFX/Drop?node-id=88-6&p=f&t=XudJ9izs5NZFtv1C-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=88%3A6&show-proto-sidebar=1',
+    viewLink: 'https://www.figma.com/proto/zIQE6pnA7CkoLPjf9KPJFX/Drop?node-id=88-6&p=f&t=N5InnkgK71vDzJi6-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=88%3A6&show-proto-sidebar=1',
   },
   {
     id: 3,
-    title: 'KNOT Dating App',
+    title: 'KNOT Designing App',
     category: 'UI/UX',
     image: '/images/knot.png', 
-    viewLink: 'https://www.figma.com/proto/JAvVAamg9kqempC3NIQg06/KNOT?node-id=92-37',
+    viewLink: 'https://www.figma.com/proto/JAvVAamg9kqempC3NIQg06/KNOT?node-id=90-22&p=f&t=LEKBNyBA9Ficp1Bq-0&scaling=scale-down&content-scaling=fixed&page-id=90%3A22',
   },
   {
     id: 4,
@@ -46,10 +46,17 @@ const projectsData = [
   },
   {
     id: 7,
-    title: 'Tution Poster Design',
+    title: 'Home Tutoring Poster Design',
     category: 'Graphic Design', 
+    image: '/images/design.png', 
+    viewLink: 'https://www.figma.com/proto/RbToUYHhCdRoFI86isFgdN/Home-Tutoring?node-id=0-3&p=f&t=uk29TSNsv7jA7qBo-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1',
+  },
+  {
+    id: 8,
+    title: 'Plant-Emotion',
+    category: 'UI/UX', 
     image: '/images/image.png', 
-    viewLink: 'https://www.figma.com/proto/JAvVAamg9kqempC3NIQg06/Tution?node-id=235-2&t=m65JH5yj6WcAkaN1-0&scaling=contain&content-scaling=fixed&page-id=0%3A1',
+    viewLink: 'https://www.figma.com/proto/DPHlLRksJrAX8mGNPQehcM/Plant-Emotion?node-id=8-57&p=f&t=uk29TSNsv7jA7qBo-0&scaling=contain&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=8%3A57',
   },
 ];
 
